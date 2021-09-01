@@ -8,4 +8,4 @@ RUN mv /build/languages/php/hello.php /app/hello.php
 WORKDIR /app
 RUN rm -rf /build
 RUN yum -y remove git 
-CMD ["php","/app/hello.php"]
+CMD ["/usr/bin/php","/app/hello.php"]
